@@ -10,7 +10,7 @@ $(document).ready(function () {
             <div class="card-content">
                 <div class="card-number">${animal.group}${animal.group_number}</div>
                 <div class="card-title">${animal.name_german}</div>
-                <img src="images/f2.jpg" alt="${animal.name_german}" class="card-image" />
+                <img src="images/${animal.name_german}.jpg" alt="${animal.name_german}" class="card-image" />
                 <div class="card-trivia">
                 ${animal.trivia_german}
                 </div>

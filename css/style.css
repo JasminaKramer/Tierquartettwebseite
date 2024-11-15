@@ -1,6 +1,8 @@
 :root {
     --dark-color: #181818;
     --background-color: beige;
+    --primary-color: #4CAF50;
+    --text-color: #333;
 }
 
 * {
@@ -9,28 +11,62 @@
 
 body {
     margin: 0;
+    font-family: "Inter", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-/* 
-.centered {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} 
-*/
+header {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
 
-.card-number,
-.stat-icon,
-.stat-value {
+nav ul {
+    list-style: none;
+    padding: 0;
     display: flex;
     justify-content: center;
+    gap: 1rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+    max-width: 1400px;
 }
 
 .card-wrapper {
     background-color: var(--dark-color);
     padding: .8rem;
     display: inline-block;
+    border-radius: .7rem;
 }
 
 .card-content {
@@ -50,6 +86,9 @@ body {
     color: white;
     font-weight: 900;
     font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-title {
@@ -84,6 +123,14 @@ body {
     border-bottom: 1px solid var(--dark-color);
 }
 
+.stat-icon,
+.stat-value {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
 .stat-icon {
     background-color: burlywood;
 }
@@ -91,4 +138,14 @@ body {
 .stat-icon img {
     max-width: 50%;
     max-height: 50%;
+}
+
+footer {
+    background-color: var(--dark-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    position: relative;
+    bottom: 0;
 }

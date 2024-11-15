@@ -2,14 +2,48 @@
 
     ul {
        height: 75px;
+       display: flex;
+       flex-direction: row; /* Arrange items in a row */
+       justify-content: space-around; /* Distribute space evenly */
+       align-items: center;
+       padding: 0;
+       margin: 0;
    }
 
-   main,
-   ul {
-       flex-direction: column;
+   main {
+       min-height: 200vh;
    }
 
-main {
-   min-height: 200vh;
-}
+   header h1 {
+       text-align: left;
+       padding-left: 1rem; /* Optional: Add some padding for better alignment */
+   }
+
+   .menu-text {
+       display: none; /* Hide the text on mobile */
+   }
+
+   .menu-icon {
+       display: inline-block;
+       width: 55px;
+       height: 40px;
+       /* background-color: var(--background-color); */
+       border-radius: 8px;
+       padding: 5px;
+   }
+
+   nav ul {
+       display: flex;
+       flex-direction: row; /* Ensure the icons are in a row */
+       justify-content: space-around; /* Distribute space evenly */
+       align-items: center;
+       width: 100%;
+   }
+
+   nav ul li {
+       display: flex;
+       justify-content: center; /* Center items within each list item */
+       align-items: center;
+       flex: 1; /* Ensure all list items take equal space */
+   }
 }

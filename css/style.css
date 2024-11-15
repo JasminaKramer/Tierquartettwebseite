@@ -45,6 +45,10 @@ nav ul li a {
     font-weight: bold;
 }
 
+.menu-icon {
+    display: none; /* Hide icons by default */
+}
+
 #wrapper {
     flex: 1;
     display: flex;

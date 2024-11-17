@@ -56,7 +56,7 @@ $(document).ready(function () {
     }
 
     function sortData(attribute) {
-        return gmynd.sort(data, attribute, 'desc');
+        return gmynd.sortData(data, [attribute]);
     }
 
     displayCards(data);

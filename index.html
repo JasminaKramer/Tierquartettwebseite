@@ -19,14 +19,16 @@
                 <h1>Tier Quartett</h1>
                 <nav>
                     <ul>
-                        <li><a href="heaviest.html"><img src="images/icons/weight.png" alt="Heaviest Animals" class="menu-icon"> <span class="menu-text">Heaviest Animals</span></a></li>
-                        <li><a href="lifespan.html"><img src="images/icons/age.png" alt="Longest Lifespan" class="menu-icon"> <span class="menu-text">Longest Lifespan</span></a></li>
-                        <li><a href="fastest.html"><img src="images/icons/speed.png" alt="Fastest Animals" class="menu-icon"> <span class="menu-text">Fastest Animals</span></a></li>
-                        <li><a href="longest.html"><img src="images/icons/length.png" alt="Longest Animals" class="menu-icon"> <span class="menu-text">Longest Animals</span></a></li>
+                        <li><a href="#" id="sort-weight"><img src="images/icons/weight.png" alt="Heaviest Animals" class="menu-icon"> <span class="menu-text">Heaviest Animals</span></a></li>
+                        <li><a href="#" id="sort-lifespan"><img src="images/icons/age.png" alt="Longest Lifespan" class="menu-icon"> <span class="menu-text">Longest Lifespan</span></a></li>
+                        <li><a href="#" id="sort-speed"><img src="images/icons/speed.png" alt="Fastest Animals" class="menu-icon"> <span class="menu-text">Fastest Animals</span></a></li>
+                        <li><a href="#" id="sort-length"><img src="images/icons/length.png" alt="Longest Animals" class="menu-icon"> <span class="menu-text">Longest Animals</span></a></li>
                     </ul>
                 </nav>
             </div>
         </header>
+
+        <button id="shuffle-button">Shuffle Cards</button>
 
         <div class="card-container">
             <!-- Cards will be appended here by JavaScript -->
@@ -38,6 +40,7 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script/libs/gmynd.min.js"></script> <!-- Include local gmynd.js -->
     <script src="script/animaldata.js"></script>
     <script src="script/main.js"></script>
 </body>

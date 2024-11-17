@@ -17,6 +17,7 @@
    header h1 {
        text-align: left;
        padding-left: 1rem; /* Optional: Add some padding for better alignment */
+       font-size: 1.5rem; /* Make the h1 header smaller */
    }
 
    .menu-text {
@@ -45,5 +46,9 @@
        justify-content: center; /* Center items within each list item */
        align-items: center;
        flex: 1; /* Ensure all list items take equal space */
+   }
+
+   #shuffle-button {
+       display: none; /* Hide the shuffle button on mobile */
    }
 }

@@ -5,15 +5,32 @@ data.forEach(animal => {
 });
 
 $(document).ready(function () {
+    const groupColors = {
+        'A': '#FF6F61', // Brighter Red
+        'B': '#FF8C42', // Brighter Orange
+        'C': '#FFD700', // Brighter Yellow
+        'D': '#66FF66', // Brighter Green
+        'E': '#5DADE2', // Brighter Blue
+        'F': '#FF69B4', // Brighter Pink
+        'G': '#87CEEB', // Brighter Light Blue
+        'H': '#9370DB', // Brighter Purple
+        // Add more groups and colors as needed
+    };
+
+    function getColorForGroup(group) {
+        return groupColors[group] || '#FFFFFF'; // Default to white if group not found
+    }
+
     function displayCards(data) {
         $('.card-container').empty();
         $.each(data, function (index, animal) {
+            let color = getColorForGroup(animal.group);
             let divBox = $(`<div class="card-wrapper">
                 <div class="card-content">
-                    <div class="card-number">${animal.group}${animal.group_number}</div>
+                    <div class="card-number" style="background-color: ${color};">${animal.group}${animal.group_number}</div>
                     <div class="card-title">${animal.name_german}</div>
                     <img src="images/${animal.name_german}.jpg" alt="${animal.name_german}" class="card-image" />
-                    <div class="card-trivia">
+                    <div class="card-trivia" style="background-color: ${color};">
                     ${animal.trivia_german}
                     </div>
                     <div class="stat-icon">

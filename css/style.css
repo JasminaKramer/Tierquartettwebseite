@@ -46,7 +46,8 @@ nav ul li a {
 }
 
 .menu-icon {
-    display: none; /* Hide icons by default */
+    display: none;
+    /* Hide icons by default */
 }
 
 #wrapper {
@@ -67,6 +68,7 @@ nav ul li a {
 }
 
 .card-wrapper {
+    display: flex;
     background-color: var(--dark-color);
     padding: .8rem;
     display: inline-block;
@@ -132,7 +134,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-   
+
 }
 
 .stat-icon {
@@ -155,7 +157,8 @@ footer {
 }
 
 .menu-icon {
-       display: none; /* Hide icons by default */
+    display: none;
+    /* Hide icons by default */
 
 }
 
@@ -171,4 +174,3 @@ footer {
     padding: 2;
     margin: 0;
 }
-
